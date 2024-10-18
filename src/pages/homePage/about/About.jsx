@@ -5,16 +5,16 @@ const About = () => {
   return (
     <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 my-14 py-10">
       {/* img div */}
-      <div className="col-span-5 lg:relative">
+      <div className="col-span-5 relative">
         <img className="rounded-xl " src={img2} alt="" />
         <img
-          className=" lg:absolute -bottom-14 border-[10px] border-white rounded-xl  -right-16  w-[300px] h-[300px]"
+          className=" absolute -bottom-14 border-[10px] border-white rounded-xl  -right-16 w-[250px]  h-[250px]  md:w-[300px] md:h-[300px]"
           src={img1}
           alt=""
         />
       </div>
       {/* content div */}
-      <div className="col-span-7 ml-5 px-5">
+      <div className="col-span-7 ml-8 px-5">
         <p className="text-red-500 text-xl font-bold mb-5">About us</p>
         <h1 className="font-bold text-3xl  lg:text-5xl lg:w-[376px] ">
           We are qualified & of experience in this field
