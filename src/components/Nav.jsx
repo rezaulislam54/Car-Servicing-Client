@@ -88,7 +88,7 @@ const Nav = () => {
         </li>
       </NavLink>
       <NavLink
-        to={"/mycart"}
+        to={"/addservice"}
         className={({ isActive, isPending }) =>
           isPending ? (
             <Spinar></Spinar>
@@ -100,7 +100,7 @@ const Nav = () => {
         }
       >
         <li>
-          <a>Contact</a>
+          <a>Add Service</a>
         </li>
       </NavLink>
     </>

@@ -1,8 +1,40 @@
+import Swal from "sweetalert2";
 import img from "../../assets/images/checkout/checkout.png";
 const AddServicePage = () => {
   const style = {
     backgroundColor: "red",
     clipPath: "polygon(14% 86%, 84% 86%, 94% 100%, 5% 100%)",
+  };
+
+  const submitFrom = (e) => {
+    e.preventDefault();
+    const title = e.target.title.value;
+    const price = e.target.price.value;
+    const type = e.target.type.value;
+    const img = e.target.img.value;
+    const description = e.target.description.value;
+    const info = { title, price, type, img, description };
+    console.log(info);
+
+    fetch("http://localhost:5000/services", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(info),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+        if (data.insertedId) {
+          Swal.fire({
+            title: "Success!",
+            text: "Service Added Successfully!",
+            icon: "success",
+            confirmButtonText: "Ok",
+          });
+        }
+      });
   };
 
   return (
@@ -28,7 +60,7 @@ const AddServicePage = () => {
         {/* <h2 className="text-xl pt-10 text-center font-bold dark:text-black">
           Add New Service
         </h2> */}
-        <form className="">
+        <form onSubmit={submitFrom}>
           <div className="md:flex gap-8 ">
             <div className="flex-1">
               <label className="block mb-2 dark:text-white" htmlFor="name">
