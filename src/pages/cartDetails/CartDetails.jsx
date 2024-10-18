@@ -122,7 +122,7 @@ const CartDetails = () => {
           {/* Download Section */}
           <div className="bg-[#151515] rounded-lg md:p-5 p-8 lg:p-8 space-y-4 border text-white mt-6">
             <h2 className="text-2xl font-bold">Download</h2>
-            <div className="flex justify-between items-center border rounded-lg py-1 pl-4 pr-8">
+            <div className="flex justify-between items-center border hover:bg-[#FF497C] rounded-lg py-1 pl-4 pr-8">
               <div className="flex items-center gap-4">
                 <img
                   src="https://res.cloudinary.com/dvp64j4a3/image/upload/v1729265840/Frame_aa5bun.png"
@@ -136,7 +136,7 @@ const CartDetails = () => {
               <GoArrowRight className="text-2xl font-bold" />
             </div>
 
-            <div className="flex justify-between items-center border rounded-lg py-1 pl-4 pr-8">
+            <div className="flex justify-between items-center border hover:bg-[#FF497C] rounded-lg py-1 pl-4 pr-8">
               <div className="flex items-center gap-4">
                 <img
                   src="https://res.cloudinary.com/dvp64j4a3/image/upload/v1729265840/Frame_aa5bun.png"

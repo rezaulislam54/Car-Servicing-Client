@@ -3,7 +3,7 @@ import img2 from "../../../assets/images/about_us/person.jpg";
 
 const About = () => {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 my-14 py-10">
+    <div className=" grid grid-cols-1 lg:grid-cols-12 gap-16 my-14 py-10">
       {/* img div */}
       <div className="col-span-5 relative">
         <img className="rounded-xl " src={img2} alt="" />
