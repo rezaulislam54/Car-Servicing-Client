@@ -4,6 +4,7 @@ import HomePage from "../pages/homePage/HomePage";
 import LoginPage from "../pages/LoginPage";
 import RegisterPage from "../pages/RegisterPage";
 import CartDetails from "../pages/cartDetails/CartDetails";
+import AddServicePage from "../pages/addService/AddServicePage";
 
 const router = createBrowserRouter([
   {
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
         path: "/service/:id",
         element: <CartDetails></CartDetails>,
         loader: ({ params }) => fetch(`services.json/${params.id}`),
+      },
+      {
+        path: "/addservice",
+        element: <AddServicePage></AddServicePage>,
       },
     ],
   },
