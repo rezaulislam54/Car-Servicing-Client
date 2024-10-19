@@ -250,7 +250,10 @@ const Product = () => {
         </div>
         <div className="border rounded-lg p-6 text-center">
           <div className="bg-[#F3F3F3] p-8 rounded-lg mb-5">
-            <img className="size-40 mx-auto" src={img6} />
+            <img
+              className="size-40 mx-auto"
+              src="https://res.cloudinary.com/dvp64j4a3/image/upload/v1729310255/png-transparent-two-silver-t-removebg-preview_swd42o.png"
+            />
           </div>
           <div className="rating">
             <input
@@ -288,7 +291,10 @@ const Product = () => {
         </div>
         <div className="border rounded-lg p-6 text-center">
           <div className="bg-[#F3F3F3] p-8 rounded-lg mb-5">
-            <img className="size-40 mx-auto" src={img6} />
+            <img
+              className="size-40 mx-auto"
+              src="https://res.cloudinary.com/dvp64j4a3/image/upload/v1729310331/thumb-removebg-preview_xbxfy8.png"
+            />
           </div>
           <div className="rating">
             <input
