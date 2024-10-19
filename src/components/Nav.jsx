@@ -71,22 +71,24 @@ const Nav = () => {
           <a>Services</a>
         </li>
       </NavLink>
-      <NavLink
-        to={"/mycart"}
-        className={({ isActive, isPending }) =>
-          isPending ? (
-            <Spinar></Spinar>
-          ) : isActive ? (
-            "text-primary font-semibold md:border-b-2 border-[#FF497C]"
-          ) : (
-            "font-semibold"
-          )
-        }
-      >
-        <li>
-          <a>Blog</a>
-        </li>
-      </NavLink>
+      {user && (
+        <NavLink
+          to={"/bookings"}
+          className={({ isActive, isPending }) =>
+            isPending ? (
+              <Spinar></Spinar>
+            ) : isActive ? (
+              "text-primary font-semibold md:border-b-2 border-[#FF497C]"
+            ) : (
+              "font-semibold"
+            )
+          }
+        >
+          <li>
+            <a>My Bookings</a>
+          </li>
+        </NavLink>
+      )}
       <NavLink
         to={"/addservice"}
         className={({ isActive, isPending }) =>
