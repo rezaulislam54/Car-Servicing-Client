@@ -1,7 +1,8 @@
 import { RiDeleteBinLine } from "react-icons/ri";
 
-const BokingsRow = ({ item, handleBookingDelete }) => {
-  const { _id, name, phone, date, email, title, servicePrice, img } = item;
+const BokingsRow = ({ item, handleBookingDelete, handlebookingUpdate }) => {
+  const { _id, name, phone, date, email, title, servicePrice, img, status } =
+    item;
 
   return (
     <tr>
@@ -50,9 +51,12 @@ const BokingsRow = ({ item, handleBookingDelete }) => {
       {/* pending */}
       <td className=" px-4 py-4 text-sm  text-gray-700 whitespace-nowrap">
         <td className="pl-5">
-          <span className="px-3 py-1 font-medium rounded-md text-white bg-[#FF3811] dark:text-gray-50">
-            <span>Conform</span>
-          </span>
+          <button
+            onClick={() => handlebookingUpdate(_id)}
+            className="px-3 py-1 font-medium rounded-md text-white bg-[#FF3811] dark:text-gray-50"
+          >
+            {status === "Conform" ? <span>Conform</span> : <span>Pending</span>}
+          </button>
         </td>
       </td>
     </tr>
