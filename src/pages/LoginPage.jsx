@@ -12,12 +12,10 @@ const LoginPage = () => {
   const navigate = useNavigate();
   const location = useLocation();
 
-  console.log(location.state);
   const handleSignIn = (e) => {
     e.preventDefault();
     const email = e.target.email.value;
     const password = e.target.password.value;
-    console.log(email, password);
 
     emailAndPasswordLogin(email, password)
       .then((result) => {

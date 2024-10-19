@@ -1,4 +1,4 @@
-import { useLoaderData } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 import img1 from "../../assets/images/checkout/checkout.png";
 import { GoArrowRight } from "react-icons/go";
 
@@ -10,7 +10,7 @@ const CartDetails = () => {
 
   const service = useLoaderData();
 
-  const { title, img, price, description, facility } = service;
+  const { _id, title, img, price, description, facility } = service;
 
   return (
     <div className="my-10">
@@ -171,9 +171,14 @@ const CartDetails = () => {
             </div>
           </div>
           <h2 className="text-4xl font-bold">Price: ${price}</h2>
-          <button className="bg-[#FF3811] text-xl text-white w-full py-2 font-bold rounded-lg">
-            Proceed Checkout
-          </button>
+
+          <div>
+            <Link to={`/checkout/${_id}`}>
+              <button className="bg-[#FF3811] text-xl text-white w-full py-2 font-bold rounded-lg">
+                Proceed Checkout
+              </button>
+            </Link>
+          </div>
         </div>
       </div>
     </div>

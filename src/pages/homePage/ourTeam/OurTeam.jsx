@@ -12,8 +12,8 @@ const OurTeam = () => {
   return (
     <div className="mb-16">
       <div className="text-center space-y-4">
-        <p className="text-xl font-bold">Service</p>
-        <h2 className="text-4xl font-bold">Our Service Area</h2>
+        <p className="text-xl font-bold">Team</p>
+        <h2 className="text-4xl font-bold">Meet Our Team</h2>
         <p className="w-[550px] mx-auto">
           the majority have suffered alteration in some form, by injected
           humour, or randomised words which don&apos;t look even slightly
@@ -26,8 +26,8 @@ const OurTeam = () => {
       <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mt-10">
         <div className="border rounded-lg p-6 text-center">
           <img
-            className="rounded-lg "
-            src="https://res.cloudinary.com/dvp64j4a3/image/upload/v1729339190/Rectangle_7_3_l0r6zs.png"
+            className="rounded-lg h-[238px] "
+            src="https://res.cloudinary.com/dvp64j4a3/image/upload/v1729312009/mechanic-repairing-car-engine_12_mpdwbl.jpg"
           />
           <h1 className="text-2xl mt-5 font-bold">Car Engine Plug</h1>
           <p className="text-xl font-semibold">Price: $20.00</p>
@@ -88,7 +88,10 @@ const OurTeam = () => {
         </div>
 
         <div className="border rounded-lg p-6 text-center">
-          <img className="rounded-lg h-[238px]" src={img1} />
+          <img
+            className="rounded-lg h-[238px]"
+            src="https://res.cloudinary.com/dvp64j4a3/image/upload/v1729342831/mechanic-holding-wrench-_i674gz.jpg"
+          />
           <h1 className="text-2xl mt-5 font-bold">Car Engine Plug</h1>
           <p className="text-xl font-semibold">Price: $20.00</p>
           <div className="flex gap-2 justify-center mt-3">
@@ -124,7 +127,10 @@ const OurTeam = () => {
         </div>
 
         <div className="border rounded-lg p-6 text-center">
-          <img className="rounded-lg h-[238px]" src={img3} />
+          <img
+            className="rounded-lg"
+            src="https://res.cloudinary.com/dvp64j4a3/image/upload/v1729339190/Rectangle_7_3_l0r6zs.png"
+          />
           <h1 className="text-2xl mt-5 font-bold">Car Engine Plug</h1>
           <p className="text-xl font-semibold">Price: $20.00</p>
           <div className="flex gap-2 justify-center mt-3">

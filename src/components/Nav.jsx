@@ -55,7 +55,7 @@ const Nav = () => {
           <a>About</a>
         </li>
       </NavLink>
-      <NavLink
+      {/* <NavLink
         to={"/myadded"}
         className={({ isActive, isPending }) =>
           isPending ? (
@@ -70,7 +70,7 @@ const Nav = () => {
         <li>
           <a>Services</a>
         </li>
-      </NavLink>
+      </NavLink> */}
       {user && (
         <NavLink
           to={"/bookings"}
