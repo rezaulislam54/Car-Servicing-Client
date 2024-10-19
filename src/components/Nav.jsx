@@ -109,7 +109,7 @@ const Nav = () => {
   );
   return (
     <div className=" h-20 bg-base-100 shadow-md">
-      <div className="navbar max-w-7xl mx-auto ">
+      <div className="navbar container mx-auto ">
         <div className="navbar-start">
           <Link>
             <img className="h-14 p-1" src={logo} alt="" />

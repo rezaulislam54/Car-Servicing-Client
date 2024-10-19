@@ -58,6 +58,7 @@ const Product = () => {
           <h1 className="text-2xl font-bold">Car Engine Plug</h1>
           <p className="text-xl font-semibold">Price: $20.00</p>
         </div>
+
         <div className="border rounded-lg p-6 text-center">
           <div className="bg-[#F3F3F3] p-8 rounded-lg mb-5">
             <img className="size-40 mx-auto" src={img2} />
