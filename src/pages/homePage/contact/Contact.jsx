@@ -1,6 +1,6 @@
 const Contact = () => {
   return (
-    <div className="flex justify-around items-center bg-[#151515]  p-16 my-20 rounded-lg text-white">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:justify-around items-center bg-[#151515] p-16 my-20 rounded-lg text-white">
       <div className="flex gap-4 items-center">
         <img src="https://res.cloudinary.com/dvp64j4a3/image/upload/v1729274754/Group_32_ojg23n.png" />
         <div>

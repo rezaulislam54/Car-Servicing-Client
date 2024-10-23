@@ -11,7 +11,7 @@ const Product = () => {
       <div className="text-center space-y-4">
         <p className="text-xl font-bold">Popular Products</p>
         <h2 className="text-4xl font-bold">Browse Our Products</h2>
-        <p className="w-[550px] mx-auto">
+        <p className="px-6 md:px-0 md:w-[550px] mx-auto">
           the majority have suffered alteration in some form, by injected
           humour, or randomised words which don&apos;t look even slightly
           believable.

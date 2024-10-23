@@ -9,6 +9,7 @@ import CheckOut from "../pages/checkout/CheckOut";
 import BookingsPage from "../pages/bokings/BookingsPage";
 import PrivetRoutes from "./PrivetRoutes";
 import ErrorPage from "../pages/error/ErrorPage";
+import AboutPage from "../pages/Aboutepage/AboutPage";
 
 const router = createBrowserRouter([
   {
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <HomePage></HomePage>,
+      },
+      {
+        path: "/about",
+        element: <AboutPage></AboutPage>,
       },
       {
         path: "/login",

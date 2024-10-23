@@ -40,7 +40,7 @@ const Nav = () => {
         </li>
       </NavLink>
       <NavLink
-        to={"/add-coffe"}
+        to={"/about"}
         className={({ isActive, isPending }) =>
           isPending ? (
             <Spinar></Spinar>

@@ -4,9 +4,7 @@ import {
   FaLinkedinIn,
   FaTwitter,
 } from "react-icons/fa";
-import img1 from "../../../assets/images/team/1.jpg";
 import img2 from "../../../assets/images/team/2.jpg";
-import img3 from "../../../assets/images/team/3.jpg";
 
 const OurTeam = () => {
   return (
@@ -14,7 +12,7 @@ const OurTeam = () => {
       <div className="text-center space-y-4">
         <p className="text-xl font-bold">Team</p>
         <h2 className="text-4xl font-bold">Meet Our Team</h2>
-        <p className="w-[550px] mx-auto">
+        <p className="px-6 md:px-0 md:w-[550px] mx-auto">
           the majority have suffered alteration in some form, by injected
           humour, or randomised words which don&apos;t look even slightly
           believable.
@@ -23,7 +21,7 @@ const OurTeam = () => {
 
       {/* cart Container */}
 
-      <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mt-10">
+      <div className="*:image-full grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5 mt-10">
         <div className="border rounded-lg p-6 text-center">
           <img
             className="rounded-lg h-[238px] "
