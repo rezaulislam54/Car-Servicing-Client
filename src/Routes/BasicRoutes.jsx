@@ -41,7 +41,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/addservice",
-        element: <AddServicePage></AddServicePage>,
+        element: (
+          <PrivetRoutes>
+            <AddServicePage></AddServicePage>
+          </PrivetRoutes>
+        ),
       },
       {
         path: "/checkout/:id",

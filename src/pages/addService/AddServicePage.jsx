@@ -1,10 +1,14 @@
 import Swal from "sweetalert2";
 import img from "../../assets/images/checkout/checkout.png";
+import { useContext } from "react";
+import { AuthContext } from "../../provider/AuthProvider";
 const AddServicePage = () => {
   const style = {
     backgroundColor: "red",
     clipPath: "polygon(14% 86%, 84% 86%, 94% 100%, 5% 100%)",
   };
+
+  const { user } = useContext(AuthContext);
 
   const submitFrom = (e) => {
     e.preventDefault();
@@ -13,7 +17,8 @@ const AddServicePage = () => {
     const type = e.target.type.value;
     const img = e.target.img.value;
     const description = e.target.description.value;
-    const info = { title, price, type, img, description };
+    const email = user.email;
+    const info = { title, price, type, img, description, email };
     console.log(info);
 
     fetch("http://localhost:5000/services", {
