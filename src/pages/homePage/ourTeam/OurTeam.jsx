@@ -21,10 +21,10 @@ const OurTeam = () => {
 
       {/* cart Container */}
 
-      <div className="*:image-full grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5 mt-10">
+      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5 mt-10">
         <div className="border rounded-lg p-6 text-center">
           <img
-            className="rounded-lg h-[238px] "
+            className="rounded-lg w-full h-[238px] "
             src="https://res.cloudinary.com/dvp64j4a3/image/upload/v1729312009/mechanic-repairing-car-engine_12_mpdwbl.jpg"
           />
           <h1 className="text-2xl mt-5 font-bold">Car Engine Plug</h1>
@@ -45,7 +45,7 @@ const OurTeam = () => {
 
         <div className="border rounded-lg p-6 text-center">
           <img
-            className="rounded-lg"
+            className="rounded-lg w-full h-[238px]"
             src="https://res.cloudinary.com/dvp64j4a3/image/upload/v1729339187/Rectangle_7_4_fmuogs.png"
           />
           <h1 className="text-2xl mt-5 font-bold">Car Engine Plug</h1>
@@ -66,7 +66,7 @@ const OurTeam = () => {
 
         <div className="border rounded-lg p-6 text-center">
           <img
-            className="rounded-lg "
+            className="rounded-lg w-full h-[238px]"
             src="https://res.cloudinary.com/dvp64j4a3/image/upload/v1729339152/Rectangle_7_2_z0q9ow.png"
           />
           <h1 className="text-2xl mt-5 font-bold">Car Engine Plug</h1>
@@ -87,7 +87,7 @@ const OurTeam = () => {
 
         <div className="border rounded-lg p-6 text-center">
           <img
-            className="rounded-lg h-[238px]"
+            className="rounded-lg w-full h-[238px]"
             src="https://res.cloudinary.com/dvp64j4a3/image/upload/v1729342831/mechanic-holding-wrench-_i674gz.jpg"
           />
           <h1 className="text-2xl mt-5 font-bold">Car Engine Plug</h1>
@@ -107,7 +107,7 @@ const OurTeam = () => {
         </div>
 
         <div className="border rounded-lg p-6 text-center">
-          <img className="rounded-lg h-[238px]" src={img2} />
+          <img className="rounded-lg w-full h-[238px]" src={img2} />
           <h1 className="text-2xl mt-5 font-bold">Car Engine Plug</h1>
           <p className="text-xl font-semibold">Price: $20.00</p>
           <div className="flex gap-2 justify-center mt-3">
@@ -126,7 +126,7 @@ const OurTeam = () => {
 
         <div className="border rounded-lg p-6 text-center">
           <img
-            className="rounded-lg"
+            className="rounded-lg w-full h-[238px]"
             src="https://res.cloudinary.com/dvp64j4a3/image/upload/v1729339190/Rectangle_7_3_l0r6zs.png"
           />
           <h1 className="text-2xl mt-5 font-bold">Car Engine Plug</h1>
@@ -147,7 +147,7 @@ const OurTeam = () => {
 
         <div className="border rounded-lg p-6 text-center">
           <img
-            className="rounded-lg h-[238px] "
+            className="rounded-lg w-full h-[238px] "
             src="https://res.cloudinary.com/dvp64j4a3/image/upload/v1729342845/roadside-car-mechanic-holding-tool-_akkvid.avif"
           />
           <h1 className="text-2xl mt-5 font-bold">Car Engine Plug</h1>
@@ -168,7 +168,7 @@ const OurTeam = () => {
 
         <div className="border rounded-lg p-6 text-center">
           <img
-            className="rounded-lg h-[238px] "
+            className="rounded-lg w-full h-[238px] "
             src="https://res.cloudinary.com/dvp64j4a3/image/upload/v1729342835/mechanic-man-uniformjpg_piog3q.jpg"
           />
           <h1 className="text-2xl mt-5 font-bold">Car Engine Plug</h1>

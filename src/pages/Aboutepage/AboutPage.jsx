@@ -1,5 +1,6 @@
 import About from "../homePage/about/About";
 import OurTeam from "../homePage/ourTeam/OurTeam";
+import ContactUs from "./ContactUs";
 
 const AboutPage = () => {
   const style = {
@@ -27,9 +28,12 @@ const AboutPage = () => {
           ></div>
         </div>
       </div>
-
       <About></About>
       <OurTeam></OurTeam>
+      <div className="my-10">
+        <h2 className="text-4xl mb-4 font-bold text-center">Contact Us</h2>
+        <ContactUs></ContactUs>
+      </div>
     </div>
   );
 };
