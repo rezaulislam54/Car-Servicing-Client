@@ -8,11 +8,13 @@ import AddServicePage from "../pages/addService/AddServicePage";
 import CheckOut from "../pages/checkout/CheckOut";
 import BookingsPage from "../pages/bokings/BookingsPage";
 import PrivetRoutes from "./PrivetRoutes";
+import ErrorPage from "../pages/error/ErrorPage";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <MainLayoutes></MainLayoutes>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: "/",
