@@ -95,6 +95,7 @@ const CheckOut = () => {
                 placeholder=" Enter Your Name"
                 id="name"
                 name="name"
+                required
               />
 
               <label
@@ -109,6 +110,7 @@ const CheckOut = () => {
                 placeholder="Enter Your Phone"
                 id="phone"
                 name="phone"
+                required
               />
             </div>
 
@@ -123,6 +125,7 @@ const CheckOut = () => {
                 placeholder="Enter Service Date "
                 id="date"
                 name="date"
+                required
               />
               <label className="block mb-2 mt-4 dark:text-white" htmlFor="type">
                 Service Price
@@ -134,6 +137,7 @@ const CheckOut = () => {
                 defaultValue={price}
                 id="price"
                 name="price"
+                required
               />
             </div>
           </div>

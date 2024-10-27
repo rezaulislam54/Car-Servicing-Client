@@ -80,6 +80,7 @@ const AddServicePage = () => {
                 type="text"
                 placeholder=" Service Name"
                 id="name"
+                required
                 name="title"
               />
 
@@ -94,6 +95,7 @@ const AddServicePage = () => {
                 type="text"
                 placeholder="Enter Service Price"
                 id="price"
+                required
                 name="price"
               />
             </div>
@@ -109,6 +111,7 @@ const AddServicePage = () => {
                 placeholder="Enter Service Type "
                 id="type"
                 name="type"
+                required
               />
               <label className="block mb-2 mt-4 dark:text-white" htmlFor="type">
                 Service Photo
@@ -119,6 +122,7 @@ const AddServicePage = () => {
                 placeholder="Enter Service Photo URL"
                 id="img"
                 name="img"
+                required
               />
             </div>
           </div>
@@ -129,6 +133,7 @@ const AddServicePage = () => {
           <textarea
             className="w-full p-4 rounded-md border"
             name="description"
+            required
             rows={7}
             placeholder="Product Description"
             id="description"

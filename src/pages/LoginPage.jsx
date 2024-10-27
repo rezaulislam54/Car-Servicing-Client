@@ -199,6 +199,7 @@ const LoginPage = () => {
                       type="email"
                       name="email"
                       ref={emailRef}
+                      required
                       id=""
                       placeholder="Email"
                       className="px-4 py-1 w-full focus:outline-0"
@@ -213,6 +214,7 @@ const LoginPage = () => {
                     <input
                       type="password"
                       name="password"
+                      required
                       id=""
                       placeholder="password"
                       className="px-4 py-1 w-full focus:outline-0"

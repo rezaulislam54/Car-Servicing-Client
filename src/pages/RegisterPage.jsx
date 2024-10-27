@@ -89,8 +89,7 @@ const RegisterPage = () => {
                 backgroundSize: "100% 100%",
                 backgroundOrigin: "content-box",
               }}
-            >
-            </div>
+            ></div>
 
             <div className="w-full lg:w-1/2 bg-white p-5 rounded-lg lg:rounded-l-none">
               <div className=" p-5 ">
@@ -173,6 +172,7 @@ const RegisterPage = () => {
                       <input
                         type="text"
                         name="name"
+                        required
                         id=""
                         placeholder="name"
                         className="p-3 w-full focus:outline-0"
@@ -188,6 +188,7 @@ const RegisterPage = () => {
                       <input
                         type="email"
                         name="email"
+                        required
                         id=""
                         placeholder="Email"
                         className="p-3 w-full focus:outline-0"
@@ -202,6 +203,7 @@ const RegisterPage = () => {
                       <input
                         type="password"
                         name="password"
+                        required
                         id=""
                         placeholder="password"
                         className="p-3  w-full focus:outline-0"
@@ -217,6 +219,7 @@ const RegisterPage = () => {
                       <input
                         type="text"
                         name="image"
+                        required
                         id=""
                         placeholder="imageURL"
                         className="p-3 w-full focus:outline-0"
