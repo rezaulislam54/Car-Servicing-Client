@@ -17,11 +17,11 @@ const RegisterPage = () => {
     const password = e.target.password.value;
     const image = e.target.image.value;
 
-    console.log(name, image);
+    // console.log(name, image);
 
     createUser(email, password)
-      .then((result) => {
-        console.log(result.user);
+      .then(() => {
+        // console.log(result.user);
         updateUserProfile({ displayName: name, photoURL: image })
           .then(() => {
             setLoading(false);
@@ -56,8 +56,8 @@ const RegisterPage = () => {
   const handleGoogleLogin = (e) => {
     e.preventDefault();
     googleLogin()
-      .then((result) => {
-        console.log(result.user);
+      .then(() => {
+        // console.log(result.user);
         Swal.fire({
           title: "Success!",
           text: "User Login Successfully!",

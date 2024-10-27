@@ -5,12 +5,12 @@ const Service = () => {
   const [service, setservice] = useState();
 
   useEffect(() => {
-    fetch("http://localhost:5000/services")
+    fetch("https://car-servicing-server-delta.vercel.app/services")
       .then((response) => response.json())
       .then((data) => setservice(data));
   }, []);
 
-  console.log(service);
+  // console.log(service);
 
   return (
     <div>

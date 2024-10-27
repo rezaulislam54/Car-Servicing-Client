@@ -64,15 +64,15 @@ const AuthProvider = ({ children }) => {
       const loggedIn = { email: userEmail };
       if (currentUser) {
         axios
-          .post("http://localhost:5000/jwt", loggedIn, {
+          .post("https://car-servicing-server-delta.vercel.app/jwt", loggedIn, {
             withCredentials: true,
           })
           .then((res) => {
-            console.log(res.data);
+            // console.log(res.data);
           });
       } else {
         axios
-          .post("http://localhost:5000/logout", loggedIn, {
+          .post("https://car-servicing-server-delta.vercel.app/logout", loggedIn, {
             withCredentials: true,
           })
           .then((res) => {

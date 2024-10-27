@@ -18,7 +18,7 @@ const LoginPage = () => {
     const password = e.target.password.value;
 
     emailAndPasswordLogin(email, password)
-      .then((result) => {
+      .then(() => {
         navigate(location?.state ? location.state : "/");
         Swal.fire({
           title: "Success!",
@@ -26,7 +26,7 @@ const LoginPage = () => {
           icon: "success",
           confirmButtonText: "Ok",
         });
-        console.log(result.user);
+        // console.log(result.user);
       })
       .catch((error) => {
         Swal.fire({
@@ -60,8 +60,8 @@ const LoginPage = () => {
   const handleGoogleLogin = (e) => {
     e.preventDefault();
     googleLogin()
-      .then((result) => {
-        console.log(result.user);
+      .then(() => {
+        // console.log(result.user);
         navigate(location?.state ? location.state : "/");
         Swal.fire({
           title: "Success!",
@@ -83,9 +83,9 @@ const LoginPage = () => {
   const handleGithubLogin = (e) => {
     e.preventDefault();
     githubLogin()
-      .then((result) => {
+      .then(() => {
         navigate(location?.state ? location.state : "/");
-        console.log(result.user);
+        // console.log(result.user);
         Swal.fire({
           title: "Success!",
           text: "User Login Successfully!",

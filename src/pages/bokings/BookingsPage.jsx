@@ -14,7 +14,7 @@ const BookingsPage = () => {
   const { user } = useContext(AuthContext);
   const [services, setservices] = useState([]);
 
-  const url = `http://localhost:5000/bookings/${user?.email}`;
+  const url = `https://car-servicing-server-delta.vercel.app/bookings/${user?.email}`;
   useEffect(() => {
     axios
       .get(url, { withCredentials: true })
@@ -32,12 +32,12 @@ const BookingsPage = () => {
       confirmButtonText: "Yes, delete it!",
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`http://localhost:5000/bookings/${id}`, {
+        fetch(`https://car-servicing-server-delta.vercel.app/bookings/${id}`, {
           method: "DELETE",
         })
           .then((res) => res.json())
           .then((data) => {
-            console.log(data);
+            // console.log(data);
             const remainingmy = services.filter((c) => c._id !== id);
             setservices(remainingmy);
             if (data.deleteCount > 0) {
@@ -53,7 +53,7 @@ const BookingsPage = () => {
   };
 
   const handlebookingUpdate = (id) => {
-    fetch(`http://localhost:5000/bookings/${id}`, {
+    fetch(`https://car-servicing-server-delta.vercel.app/bookings/${id}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",
@@ -62,7 +62,7 @@ const BookingsPage = () => {
     })
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
+        // console.log(data);
         if (data.modifiedCount > 0) {
           Swal.fire({
             title: "Updated!",

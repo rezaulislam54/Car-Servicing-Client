@@ -20,9 +20,9 @@ const AddServicePage = () => {
     const description = e.target.description.value;
     const email = user.email;
     const info = { title, price, type, img, description, email };
-    console.log(info);
+    // console.log(info);
 
-    fetch("http://localhost:5000/services", {
+    fetch("https://car-servicing-server-delta.vercel.app/services", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -31,7 +31,7 @@ const AddServicePage = () => {
     })
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
+        // console.log(data);
         if (data.insertedId) {
           Swal.fire({
             title: "Success!",

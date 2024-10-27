@@ -10,8 +10,8 @@ const Nav = () => {
 
   const handleLogOut = (e) => {
     e.preventDefault();
-    logOut().then((result) => {
-      console.log(result.user);
+    logOut().then(() => {
+      // console.log(result.user);
       Swal.fire({
         title: "Success!",
         text: "User Logout Successfully!",

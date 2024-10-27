@@ -37,7 +37,9 @@ const router = createBrowserRouter([
         path: "/service/:id",
         element: <CartDetails></CartDetails>,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/services/${params.id}`),
+          fetch(
+            `https://car-servicing-server-delta.vercel.app/services/${params.id}`
+          ),
       },
       {
         path: "/addservice",
@@ -55,7 +57,9 @@ const router = createBrowserRouter([
           </PrivetRoutes>
         ),
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/services/${params.id}`),
+          fetch(
+            `https://car-servicing-server-delta.vercel.app/services/${params.id}`
+          ),
       },
       {
         path: "/bookings",

@@ -33,7 +33,7 @@ const CheckOut = () => {
       img,
     };
 
-    fetch("http://localhost:5000/bookings", {
+    fetch("https://car-servicing-server-delta.vercel.app/bookings", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -42,7 +42,7 @@ const CheckOut = () => {
     })
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
+        // console.log(data);
         if (data.insertedId) {
           Swal.fire({
             title: "Success!",
