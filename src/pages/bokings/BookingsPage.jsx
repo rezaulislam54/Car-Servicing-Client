@@ -16,9 +16,9 @@ const BookingsPage = () => {
 
   const url = `http://localhost:5000/bookings/${user?.email}`;
   useEffect(() => {
-    axios(url, { withCredentials: true }).then((data) =>
-      setservices(data.data)
-    );
+    axios
+      .get(url, { withCredentials: true })
+      .then((data) => setservices(data.data));
   }, [url]);
 
   const handleBookingDelete = (id) => {

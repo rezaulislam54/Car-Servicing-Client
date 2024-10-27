@@ -4,6 +4,7 @@ import { GoArrowRight } from "react-icons/go";
 import { Helmet } from "react-helmet-async";
 
 const CartDetails = () => {
+  window.scrollTo(0, 0);
   const style = {
     backgroundColor: "red",
     clipPath: "polygon(14% 86%, 84% 86%, 94% 100%, 5% 100%)",
