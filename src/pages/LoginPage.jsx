@@ -4,7 +4,6 @@ import { useContext, useRef } from "react";
 import Swal from "sweetalert2";
 import toast from "react-hot-toast";
 import { AuthContext } from "../provider/AuthProvider";
-import axios from "axios";
 
 const LoginPage = () => {
   const { emailAndPasswordLogin, githubLogin, googleLogin, ResetPassword } =
@@ -20,14 +19,7 @@ const LoginPage = () => {
 
     emailAndPasswordLogin(email, password)
       .then((result) => {
-        const user = { email };
-        axios
-          .post("http://localhost:5000/jwt", user, { withCredentials: true })
-          .then((res) => {
-            console.log(res.data);
-            navigate(location?.state ? location.state : "/");
-          });
-
+        navigate(location?.state ? location.state : "/");
         Swal.fire({
           title: "Success!",
           text: "User Login Successfully!",
