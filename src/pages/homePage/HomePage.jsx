@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import Slider from "../../components/slider/Slider";
 import CoreFeature from "../coreFeature/CoreFeature";
 import About from "./about/About";
@@ -10,6 +11,9 @@ import Testimonial from "./testimonials/Testimonials";
 const HomePage = () => {
   return (
     <div>
+      <Helmet>
+        <title>Car Servicing | Home</title>
+      </Helmet>
       <Slider></Slider>
       <About></About>
       <Service></Service>

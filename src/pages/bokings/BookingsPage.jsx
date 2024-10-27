@@ -3,6 +3,7 @@ import BokingsRow from "./BokingsRow";
 import { AuthContext } from "../../provider/AuthProvider";
 import Swal from "sweetalert2";
 import axios from "axios";
+import { Helmet } from "react-helmet-async";
 
 const BookingsPage = () => {
   const style = {
@@ -79,6 +80,9 @@ const BookingsPage = () => {
 
   return (
     <div className=" mb-16">
+      <Helmet>
+        <title>Car Servicing | My Bookings</title>
+      </Helmet>
       <div className=" w-full rounded-lg relative ">
         <img
           src="https://res.cloudinary.com/dvp64j4a3/image/upload/v1729316407/Rectangle_1548_ovhlji.png"

@@ -2,6 +2,7 @@ import Swal from "sweetalert2";
 import img from "../../assets/images/checkout/checkout.png";
 import { useContext } from "react";
 import { AuthContext } from "../../provider/AuthProvider";
+import { Helmet } from "react-helmet-async";
 const AddServicePage = () => {
   const style = {
     backgroundColor: "red",
@@ -36,7 +37,6 @@ const AddServicePage = () => {
             title: "Success!",
             text: "Service Added Successfully!",
             icon: "success",
-            confirmButtonText: "Ok",
           });
         }
       });
@@ -44,6 +44,10 @@ const AddServicePage = () => {
 
   return (
     <div className="bg-white">
+      <Helmet>
+        <title>Car Servicing | Add Service</title>
+      </Helmet>
+
       <div className=" w-full rounded-lg relative ">
         <img src={img} className="w-full rounded-lg" />
         <div className="absolute top-0 left-0 rounded-lg w-full h-full text-start flex items-center  bg-gradient-to-r from-[#151515CC] to-[rgba(21, 21, 21, 0)]">

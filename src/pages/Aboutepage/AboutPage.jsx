@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import About from "../homePage/about/About";
 import OurTeam from "../homePage/ourTeam/OurTeam";
 import ContactUs from "./ContactUs";
@@ -10,6 +11,9 @@ const AboutPage = () => {
 
   return (
     <div className="container mx-auto">
+      <Helmet>
+        <title>Car Servicing | About Us</title>
+      </Helmet>
       <div className=" w-full rounded-lg relative ">
         <img
           src="https://res.cloudinary.com/dvp64j4a3/image/upload/v1729310772/two-men-working-car-with-hood-open_1306097-82214_cobpgk.avif"

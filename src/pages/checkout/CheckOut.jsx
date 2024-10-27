@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { useLoaderData } from "react-router-dom";
 import { AuthContext } from "../../provider/AuthProvider";
 import Swal from "sweetalert2";
+import { Helmet } from "react-helmet-async";
 
 const CheckOut = () => {
   const style = {
@@ -47,7 +48,6 @@ const CheckOut = () => {
             title: "Success!",
             text: "Service Booking Successful!",
             icon: "success",
-            confirmButtonText: "Ok",
           });
         }
         form.reset();
@@ -56,6 +56,9 @@ const CheckOut = () => {
 
   return (
     <div>
+      <Helmet>
+        <title>Car Servicing | Check Out</title>
+      </Helmet>
       <div className=" w-full rounded-lg relative ">
         <img
           src="https://res.cloudinary.com/dvp64j4a3/image/upload/v1729310772/two-men-working-car-with-hood-open_1306097-82214_cobpgk.avif"

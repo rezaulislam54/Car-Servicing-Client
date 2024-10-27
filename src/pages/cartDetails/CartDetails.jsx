@@ -1,6 +1,7 @@
 import { Link, useLoaderData } from "react-router-dom";
 import img1 from "../../assets/images/checkout/checkout.png";
 import { GoArrowRight } from "react-icons/go";
+import { Helmet } from "react-helmet-async";
 
 const CartDetails = () => {
   const style = {
@@ -14,6 +15,9 @@ const CartDetails = () => {
 
   return (
     <div className="my-10">
+      <Helmet>
+        <title>Car Servicing | Service Details </title>
+      </Helmet>
       <div className=" w-full rounded-lg relative ">
         <img src={img1} className="w-full rounded-lg" />
         <div className="absolute top-0 left-0 rounded-lg w-full h-full text-start flex items-center  bg-gradient-to-r from-[#151515CC] to-[rgba(21, 21, 21, 0)]">
