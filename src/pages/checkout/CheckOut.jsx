@@ -79,7 +79,7 @@ const CheckOut = () => {
       </div>
 
       {/* form section */}
-      <div className="bg-[#F3F3F3] rounded-lg p-20 my-20">
+      <div className="bg-[#F3F3F3] rounded-lg md:p-20 p-4 my-20">
         {/* <h2 className="text-xl pt-10 text-center font-bold dark:text-black">
           Add New Service
         </h2> */}

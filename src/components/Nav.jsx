@@ -10,15 +10,17 @@ const Nav = () => {
 
   const handleLogOut = (e) => {
     e.preventDefault();
-    logOut().then(() => {
-      // console.log(result.user);
-      Swal.fire({
-        title: "Success!",
-        text: "User Logout Successfully!",
-        icon: "success",
-        confirmButtonText: "Ok",
-      });
-    });
+   if (user) {
+     logOut().then(() => {
+       // console.log(result.user);
+       Swal.fire({
+         title: "Success!",
+         text: "User Logout Successfully!",
+         icon: "success",
+         confirmButtonText: "Ok",
+       });
+     });
+   }
   };
 
   const navlinks = (

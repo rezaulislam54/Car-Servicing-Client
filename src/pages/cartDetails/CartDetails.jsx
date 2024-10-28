@@ -38,7 +38,7 @@ const CartDetails = () => {
       {/* service container */}
       <div className="grid grid-cols-1 md:grid-cols-6 my-28 gap-6">
         {/* Left side of the */}
-        <div className="md:col-span-4 space-y-6">
+        <div className="md:col-span-4 space-y-6 px-2 md:px-0">
           <img className="rounded-lg h-[400px] w-full" src={img} />
           <h2 className="text-4xl font-bold">{title}</h2>
           <p>{description}</p>
@@ -60,7 +60,7 @@ const CartDetails = () => {
           </h2>
           <p>{description}</p>
 
-          <div className="flex gap-5 justify-evenly">
+          <div className="flex gap-5 justify-evenly flex-wrap w-full md:static">
             <div className="text-center flex flex-col items-center space-y-2 border-2 shadow-md rounded-lg p-5 border-[#ff3911]">
               <h2 className="rounded-full h-20 w-20 p-3 bg-[#ff38111a]">
                 <p className="bg-[#FF3811] text-white p-4 text-xl rounded-full">
@@ -175,9 +175,9 @@ const CartDetails = () => {
               </button>
             </div>
           </div>
-          <h2 className="text-4xl font-bold">Price: ${price}</h2>
+          <h2 className="text-4xl font-bold px-2 md:px-0">Price: ${price}</h2>
 
-          <div>
+          <div className="px-2 md:px-0">
             <Link to={`/checkout/${_id}`}>
               <button className="bg-[#FF3811] text-xl text-white w-full py-2 font-bold rounded-lg">
                 Proceed Checkout
