@@ -2,7 +2,8 @@ import { useContext } from "react";
 import { AuthContext } from "../provider/AuthProvider";
 import Swal from "sweetalert2";
 import { Link, NavLink } from "react-router-dom";
-import logo from "../assets/logo.svg"
+// import logo from "../assets/logo.svg"
+import logo1 from "../../public/logo2.png"
 import Spinar from "./Spinar";
 
 const Nav = () => {
@@ -114,7 +115,7 @@ const Nav = () => {
       <div className="navbar container mx-auto ">
         <div className="navbar-start">
           <Link>
-            <img className="h-14 p-1" src={logo} alt="" />
+            <img className="h-[75px] w-[75px] p-1" src={logo1}/>
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">

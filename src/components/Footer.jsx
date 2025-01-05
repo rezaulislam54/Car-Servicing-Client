@@ -1,3 +1,5 @@
+// import icon from "../../public/logo1.png";
+// import icon from "../../public/logo2.png";
 const Footer = () => {
   return (
     <div className="bg-[#151515]">
@@ -6,6 +8,7 @@ const Footer = () => {
           <img
             className="w-24 h-24"
             src="https://res.cloudinary.com/dvp64j4a3/image/upload/v1729267592/Group_2_eoqzso.png"
+            // src={icon}
           />
           <p>
             Edwin Diaz is a software and web technologies engineer, a life coach
