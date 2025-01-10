@@ -1,8 +1,16 @@
-# React + Vite
+Car Servicing Center
+A Car Servicing Center Website. The platform allows users to easily book car servicing appointments, track service history, and manage customer information.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Features
+Display individual product details based on IDs
+Fully responsive design
+Optimized for better performance
+Technologies Used
+Frontend: React.js, Tailwind CSS
+Backend: Node.js, Express.js
+Database: MongoDB
+Hosting: Firebase (Frontend), Vercel (Backend)
+Others: Axios, React Router, Context API
+Installation
+Clone the repository:
+git clone https://github.com/kayum-ali/glowing-cosmet
